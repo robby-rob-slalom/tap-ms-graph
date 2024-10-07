@@ -8,15 +8,19 @@ from singer_sdk import typing as th
 from tap_ms_graph.streams import (
     GroupMembersStream,
     GroupsStream,
+    GroupOwnersStream,
     SubscribedSkusStream,
     UsersStream,
+    GroupMetadataStream
 )
 
 STREAM_TYPES = [
     GroupsStream,
     GroupMembersStream,
-    SubscribedSkusStream,
-    UsersStream,
+    # GroupOwnersStream
+    # SubscribedSkusStream,
+    # UsersStream,
+    # GroupMetadataStream
 ]
 
 
